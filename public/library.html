@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <title>Library</title>
+</head>
+<body>
+  <header>
+    <h1>Library Wishlist Collection</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="profile.html">Profile</a>
+        <a class="nav-item nav-link" href="library.html">Library</a>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <h2 class="centerAlignment">Your Library</h2>
+  <div class="libraryPadding">
+    <table class="table table-hover table-bordered table-sm">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Author(s)</th>
+          <th scope="col">Year Published</th>
+          <th scope="col">Publisher</th>
+          <th scope="col">Page Count</th>
+          <th scope="col">MSRP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Ender's Game</th>
+          <td>Card, Orson Scott</td>
+          <td>1994</td>
+          <td>Tor Science Fiction</td>
+          <td>324</td>
+          <td>$7.99</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Kingdom Keepers: Disney After Dark</th>
+          <td>Pearson, Ridley</td>
+          <td>2009</td>
+          <td>Disney-Hyperion</td>
+          <td>336</td>
+          <td>$4.49</td>
+        </tr>
+
+        <tr>
+          <th scope="row">The Martian</th>
+          <td>Weir, Andy</td>
+          <td>2014</td>
+          <td>Broadway Books</td>
+          <td>387</td>
+          <td>$10.89</td>
+        </tr>
+
+        <tr>
+          <th scope="row">The Lion, the Witch, and the Wardrobe</th>
+          <td>Lewis, C. S.</td>
+          <td>1994</td>
+          <td>HarperCollins</td>
+          <td>208</td>
+          <td>$4.75</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <!-- figure idea obtained from w3schools -->
+  <figure class="thumbnailPadding centerAlignment">
+    <a href="img/WishlistImage.jpg" target="_blank">
+      <img src="img/WishlistImage.jpg" class="thumbnailStyle" alt="Wishlist red package">
+    </a>
+    <figcaption>Image provided by
+      <a href="https://icon-library.net/icon/wish-list-icon-26.html" target="_blank">Icon Library</a>
+      </figcaption>
+  </figure>
+
+  <h2>Add to your Wishlist</h2>
+  <form class="libraryPadding">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputTitle">Book Title</label>
+        <input type="text" class="form-control" id="inputTItle" placeholder="Title">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputAuthor">Author Name (Last, First)</label>
+        <input type="text" class="form-control" id="inputAuthor" placeholder="Author">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputPublisher">Publisher</label>
+        <input type="text" class="form-control" id="inputPublisher" placeholder="Publisher">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputYear">Year Published</label>
+        <input type="number" class="form-control" id="inputYear" placeholder="yyyy">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputCount">Page Count</label>
+        <input type="number" class="form-control" id="inputCOunt">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">MSRP (US $)</label>
+        <input type="number" class="form-control" id="inputMSRP" step="0.01">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
+</body>
+</html>

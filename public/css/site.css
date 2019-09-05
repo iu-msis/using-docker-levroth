@@ -1,0 +1,48 @@
+header{
+  color: lightGrey;
+  background-color: navy;
+  padding: 6px
+}
+
+body {
+  color: navy;
+  background-color: lightGrey;
+}
+
+p {
+  padding: 10px;
+}
+
+a {
+  color: rgb(102,0,102);
+}
+
+figcaption{
+  color: rgb(85,85,85);
+  font-size: 10px;
+}
+
+h2 {
+  padding: 20px;
+}
+
+.libraryPadding{
+  padding: 20px;
+}
+
+.centerAlignment {
+  text-align: center;
+}
+
+.thumbnailStyle {
+  width: 100px;
+}
+
+.thumbnailPadding{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#emailLink {
+  text-decoration: underline;
+}
