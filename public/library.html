@@ -30,7 +30,7 @@
   <br>
   <h2 class="centerAlignment">Your Library</h2>
   <div class="libraryPadding">
-    <table class="table table-hover table-bordered table-sm">
+    <table id="tblLibrary" class="table table-hover table-bordered table-sm">
       <thead class="thead-dark">
         <tr>
           <th scope="col">Title</th>
@@ -124,5 +124,10 @@
     </div>
     <button type="submit" class="btn btn-primary">Add</button>
   </form>
+  <!-- table sort from http://tristen.ca/tablesort/demo/ -->
+  <script src="js/tablesort.min.js"></script>
+  <script>
+    new Tablesort(document.getElementById('tblLibrary'));
+  </script>
 </body>
 </html>
