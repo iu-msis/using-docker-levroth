@@ -26,6 +26,10 @@ h2 {
   padding: 20px;
 }
 
+tr {
+  background-color: white;
+}
+
 .libraryPadding{
   padding: 20px;
 }
@@ -47,9 +51,13 @@ h2 {
   text-decoration: underline;
 }
 
+#tblHeader {
+  background-color: lightblue;
+}
+
   /* table format from http://tristen.ca/tablesort/demo/ */
 
-  th[role=columnheader]:not(.no-sort) {
+th[role=columnheader]:not(.no-sort) {
 	cursor: pointer;
 }
 
