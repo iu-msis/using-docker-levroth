@@ -28,20 +28,27 @@
     </div>
   </nav>
   <br>
-  <h2 class="centerAlignment">Julie Perkins</h2>
-  <br>
-    <!-- figure idea obtained from w3schools -->
-  <figure class="centerAlignment">
-    <a href="img/JuliePerkins.jpg" target="_blank">
-      <img src="img/JuliePerkins.jpg" alt="Julie Perkins Profile Picture">
-    </a>
-    <figcaption>Image provided by https://randomuser.me/</figcaption>
-  </figure>
-  <p class="centerAlignment">
-    Country of Origin: USA <br>
-    Birthdate: 04/06/1979 <br>
-    Age: 43 <br>
-    <a href="mailto:julie.perkins31@example.com" id="emailLink">julie.perkins31@example.com</a>
-  </p>
+  <div id="randomUserApp">
+    <div class="randomUser"
+      v-for="user in users">
+      <h2 class="centerAlignment">{{ user.name.first }} {{user.name.last}}</h2>
+      <br>
+        <!-- figure idea obtained from w3schools -->
+      <figure class="centerAlignment">
+        <a :href="user.picture.large" target="_blank">
+          <img :src="user.picture.large" alt="Profile Picture">
+        </a>
+        <figcaption>Image provided by https://randomuser.me/</figcaption>
+      </figure>
+      <p class="centerAlignment">
+        Country/State of Origin: {{ user.location.state }} <br>
+        Birthdate: {{ user.dob.date}} <br>
+        Age: {{ user.dob.age }} <br>
+        <a :href="'mailto:' + user.email" id="emailLink">{{ user.email }}</a>
+      </p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/randomuser.app.js"></script>
 </body>
 </html>
