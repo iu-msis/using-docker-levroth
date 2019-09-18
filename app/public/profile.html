@@ -46,7 +46,9 @@
         Age: {{ user.dob.age }} <br>
         <a :href="'mailto:' + user.email" id="emailLink">{{ user.email }}</a>
         <br><br>
-        <button v-on:click="fetchUser">Give me a new profile!</button>
+        <form @submit.prevent="fetchUser">
+          <button>Give me a new profile!</button>
+        </form>
       </p>
 
     </div>
